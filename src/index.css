@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow;
+  }
+  20% {
+    box-shadow: 0 0 5px orange, 0 0 10px yellow, 0 0 15px green;
+  }
+  40% {
+    box-shadow: 0 0 5px yellow, 0 0 10px green, 0 0 15px blue;
+  }
+  60% {
+    box-shadow: 0 0 5px green, 0 0 10px blue, 0 0 15px red;
+  }
+  80% {
+    box-shadow: 0 0 5px blue, 0 0 10px red, 0 0 15px orange;
+  }
+  100% {
+    box-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow;
+  }
+}
+
+@keyframes glow {
+    0% {
+      box-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow;
+    }
+    20% {
+      box-shadow: 0 0 5px orange, 0 0 10px yellow, 0 0 15px green;
+    }
+    40% {
+      box-shadow: 0 0 5px yellow, 0 0 10px green, 0 0 15px blue;
+    }
+    60% {
+      box-shadow: 0 0 5px green, 0 0 10px blue, 0 0 15px red;
+    }
+    80% {
+      box-shadow: 0 0 5px blue, 0 0 10px red, 0 0 15px orange;
+    }
+    100% {
+      box-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow;
+    }
+  }
+  
+  .glow-animation {
+    animation: glow 3s infinite alternate;
+  }
+
+
+  @keyframes buttonGlow {
+    0% {
+      box-shadow: 0 0 5px blue, 0 0 10px green, 0 0 15px yellow;
+    }
+    50% {
+      box-shadow: 0 0 10px green, 0 0 20px yellow, 0 0 30px red;
+    }
+    100% {
+      box-shadow: 0 0 5px yellow, 0 0 10px red, 0 0 15px green;
+    }
+  }
+  
+  .glow-button {
+    animation: buttonGlow 1.5s infinite alternate;
+  }
+
+  
+
+.bg-animation {
+  animation: backgroundChange 5s ease-in-out infinite;
+}
+
+@keyframes buttonGlow {
+  0% {
+    box-shadow: 0 0 5px red, 0 0 10px green, 0 0 15px yellow;
+  }
+  50% {
+    box-shadow: 0 0 10px green, 0 0 20px yellow, 0 0 30px red;
+  }
+  100% {
+    box-shadow: 0 0 5px yellow, 0 0 10px red, 0 0 15px green;
+  }
+}
+
+.glow-button {
+  animation: buttonGlow 1.5s infinite alternate;
+}
+
+
+  .border-gradient {
+    border-image: linear-gradient(to right, red, green, blue, orange, yellow);
+    border-image-slice: 1;
+  }
